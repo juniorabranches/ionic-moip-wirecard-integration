@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Moip (Wirecard) Integration
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="cliente()">Create Customer</button>
+  <button ion-button *ngIf="isPedido" (click)="pedido()">Create Request</button>
+
+  <button ion-button *ngIf="isPagar" (click)="pagar()">Payment</button>
+  <br><br>
+  Ticket: {{barCodeBoleto}}
+</ion-content>
